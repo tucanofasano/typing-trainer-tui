@@ -7,9 +7,10 @@ import (
 	"strings"
 	"sort"
 
-	- "modernc.org/sqlite"
+	_ "modernc.org/sqlite"
 )	
 
+//go:embed inits/*.sql
 var initFiles embed.FS
 
 type DB struct {
